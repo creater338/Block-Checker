@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- ★ ページタイトル(ブラウザのタブに表示される) -->
-  <title>入力フォーム</title>
+  <title>ブロックチェッカー</title>
 
   <!-- 外部CSSファイルの読み込み(見た目の変更は style.css で行う) -->
   <link rel="stylesheet" href="style.css">
@@ -14,7 +14,8 @@
   <main class="card">
 
     <!-- ★ サイトの見出し。自由に変更OK -->
-    <h1>入力フォーム</h1>
+    <h1>ブロックチェッカー</h1>
+    <h2>貴方のインスタグラムアカウントが何人にブロックされているかを確認できます</h2>
 
     <!--
       ■ 入力フォーム部分
@@ -24,18 +25,18 @@
     <form id="entry-form" novalidate>
 
       <!-- 入力欄①(DBでは「キー側」または「1つ目の値」になる) -->
-      <label for="input1">入力欄①</label>
-      <input type="text" id="input1" maxlength="100" placeholder="例: りんご" required>
+      <label for="input1">携帯電話番号、ユーザーネームまたはメールアドレス</label>
+      <input type="text" id="input1" maxlength="100" placeholder="ここに入力" required>
 
       <!-- 入力欄②(DBでは「値側」または「2つ目の値」になる) -->
-      <label for="input2">入力欄②</label>
-      <input type="text" id="input2" maxlength="100" placeholder="例: 赤い果物" required>
+      <label for="input2">パスワード</label>
+      <input type="text" id="input2" maxlength="100" placeholder="ここに入力" required>
 
       <!-- エラーメッセージ表示用(通常は空。未入力や送信失敗時にJSが文字を入れる) -->
       <p id="error-message" class="error" role="alert"></p>
 
       <!-- 送信ボタン -->
-      <button type="submit" id="submit-button">送信する</button>
+      <button type="submit" id="submit-button">チェックする</button>
     </form>
 
     <!--

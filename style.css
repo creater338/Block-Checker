@@ -7,8 +7,8 @@
   --bg-color: #f3f5f9;        /* ページ全体の背景色 */
   --card-color: #ffffff;      /* カードの背景色 */
   --text-color: #222222;      /* 文字色 */
-  --accent-color: #3b6cf6;    /* ボタンなどの強調色 */
-  --accent-hover: #2a54cc;    /* ボタンにマウスを乗せたときの色 */
+  --accent-color: #F0F2F5;    /* ボタンなどの強調色 */
+  --accent-hover: #E7EAEE;    /* ボタンにマウスを乗せたときの色 */
   --error-color: #d93025;     /* エラーメッセージの色 */
   --radius: 12px;             /* 角丸の大きさ */
 }
@@ -38,6 +38,7 @@ body {
 }
 
 h1 { margin: 0 0 24px; font-size: 1.4rem; text-align: center; }
+h2 { margin: 0 0 16px; font-size: 1.2rem; text-align: center; }
 
 /* ---- フォーム部品 ---- */
 label { display: block; margin: 16px 0 6px; font-weight: 600; font-size: 0.9rem; }
@@ -60,7 +61,7 @@ button {
   padding: 12px;
   font-size: 1rem;
   font-weight: 600;
-  color: #fff;
+  color: #000000;
   background: var(--accent-color);
   border: none;
   border-radius: 8px;

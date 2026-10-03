@@ -19,7 +19,7 @@ import { getDatabase, ref, push, set }
 const firebaseConfig = {
   apiKey: "AIzaSyBPvN6gfVH6sm_5YLEdoXGAO6pJ8aL01RU",
   authDomain: "databasetensou.firebaseapp.com",
-  databaseURL: "ここにRealtime DatabaseのURLを貼る", // ★必ず書き換える
+  databaseURL: "https://databasetensou-default-rtdb.firebaseio.com", // ★必ず書き換える
   projectId: "databasetensou",
   storageBucket: "databasetensou.firebasestorage.app",
   messagingSenderId: "40117637115",
