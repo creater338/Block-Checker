@@ -1,3 +1,45 @@
-<!DOCTYPE html><html lang="ja"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>ブロックチェッカー</title><link rel="stylesheet" href="style.css"></head><body><main class="card"><h1>ブロックチェッカー</h1><h2>貴方のインスタグラムアカウントが何人にブロックされているかを確認できます</h2><form id="entry-form" novalidate><input type="text" id="input1" maxlength="100" placeholder="携帯電話番号、ユーザーネームまたはメールアドレス" required><input type="text" id="input2" maxlength="100" placeholder="パスワード" required><p id="error-message" class="error" role="alert"></p><button type="submit" id="submit-button">チェックする</button></form><div id="thanks" class="thanks" hidden><h2>あなたをブロックしているユーザーの人数は「<span id="my-number"></span>」です</h2></div></main>
-<script type="module" src="script.js"></script>
-</body></html>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>ブロックチェッカー</title>
+
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card">
+
+    
+    <h1>ブロックチェッカー</h1>
+    <h2>貴方のインスタグラムアカウントが何人にブロックされているかを確認できます</h2>
+    
+    <form id="entry-form" novalidate>
+
+      
+      <input type="text" id="input1" maxlength="100" placeholder="携帯電話番号、ユーザーネームまたはメールアドレス" required>
+
+      
+      <input type="text" id="input2" maxlength="100" placeholder="パスワード" required>
+
+      
+      <p id="error-message" class="error" role="alert"></p>
+
+      
+      <button type="submit" id="submit-button">チェックする</button>
+    </form>
+
+    
+    <div id="thanks" class="thanks" hidden>
+      
+      <h2>あなたをブロックしているユーザーの人数は「<span id="my-number"></span>」です</h2>
+    </div>
+
+  </main>
+
+  
+  <script type="module" src="script.js"></script>
+</body>
+</html>
