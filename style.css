@@ -1,0 +1,79 @@
+/* ==========================================================
+   style.css : 見た目の設定
+   ★ 色や角丸を変えたいときは、まず下の :root の値を書き換える
+   ========================================================== */
+
+:root {
+  --bg-color: #f3f5f9;        /* ページ全体の背景色 */
+  --card-color: #ffffff;      /* カードの背景色 */
+  --text-color: #222222;      /* 文字色 */
+  --accent-color: #3b6cf6;    /* ボタンなどの強調色 */
+  --accent-hover: #2a54cc;    /* ボタンにマウスを乗せたときの色 */
+  --error-color: #d93025;     /* エラーメッセージの色 */
+  --radius: 12px;             /* 角丸の大きさ */
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;              /* カードを画面中央に置くための設定 */
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  background: var(--bg-color);
+  color: var(--text-color);
+  font-family: system-ui, -apple-system, "Hiragino Sans", "Noto Sans JP", sans-serif;
+}
+
+/* ---- カード(白い枠) ---- */
+.card {
+  width: 100%;
+  max-width: 420px;           /* ★ カードの横幅 */
+  padding: 32px 24px;
+  background: var(--card-color);
+  border-radius: var(--radius);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+h1 { margin: 0 0 24px; font-size: 1.4rem; text-align: center; }
+
+/* ---- フォーム部品 ---- */
+label { display: block; margin: 16px 0 6px; font-weight: 600; font-size: 0.9rem; }
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 1rem;
+  border: 1px solid #c8cdd8;
+  border-radius: 8px;
+}
+input[type="text"]:focus {
+  outline: 2px solid var(--accent-color);
+  border-color: transparent;
+}
+
+button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  background: var(--accent-color);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+button:hover { background: var(--accent-hover); }
+button:disabled { opacity: 0.6; cursor: not-allowed; }  /* 送信中は押せない */
+
+.error { min-height: 1.2em; margin: 12px 0 0; color: var(--error-color); font-size: 0.9rem; }
+
+/* ---- 送信完了メッセージ ---- */
+.thanks { text-align: center; }
+.thanks h2 { margin: 0 0 8px; }
+
+/* hidden属性が付いた要素を確実に非表示にする(display指定に負けないように) */
+[hidden] { display: none !important; }
